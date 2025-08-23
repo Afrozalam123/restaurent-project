@@ -12,6 +12,8 @@ nav {
   align-items: center;      
   justify-content: center; 
   top: 2rem;
+  right: 1rem;
+  cursor: pointer;
   
 }
 
@@ -19,7 +21,7 @@ nav ul {
   display: flex;            
   list-style: none;        
   gap: 50px;  
-            
+  cursor: pointer;
 
 }
 
@@ -31,7 +33,7 @@ nav ul  {
   transition: 0.3s;
 }
 
-nav ul :hover {
+nav ul li :hover {
   background-color: white;
   color: purple;
   border-radius: 6px;
@@ -56,6 +58,20 @@ img{
   left: 2rem;
 }
 
-
+.icon{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+ 
+  left: 71rem;
+  gap: 2.2rem;
+  top: -7rem;
+  font-size: 1rem;
+}
+.icon .fa-cart-shopping {
+  position: relative;
+  cursor: pointer;
+  
+}
 
 
