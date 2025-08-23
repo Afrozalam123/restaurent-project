@@ -1,14 +1,28 @@
-import React from 'react'
-import Style from "./Component/Style"
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./Component/Home";
+import Aboutus from "./Component/Aboutus";
+import Contact from "./Component/Contact"
+import Menu from "./Component/Menu";
+import Login from "./Component/Login";
+import Layout from "./Component/Layout";   
+
 const App = () => {
   return (
-    <div>
-       <h1 className="text-4xl font-bold text-green-600">Hello world</h1>
-       <p className='text-5xl font-bold bg-amber-900 '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum officia, accusantium laudantium aperiam facere tenetur, id pariatur placeat doloremque esse dolore soluta.</p>
-    
-      <Style/>
-    </div>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        {/* Parent Route with Layout */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="aboutus" element={<Aboutus />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="menu" element={<Menu />} />
+          <Route path="login" element={<Login />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;

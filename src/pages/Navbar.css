@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+nav {
+  background-color: darkgray; 
+  height: 80px;  
+  width: 80rem;         
+  display: flex;
+  align-items: center;      
+  justify-content: center; 
+  top: 2rem;
+  
+}
+
+nav ul {
+  display: flex;            
+  list-style: none;        
+  gap: 50px;  
+            
+
+}
+
+nav ul  {
+  text-decoration: none;
+  color: white;
+  /* font-size:4rem; */
+  
+  transition: 0.3s;
+}
+
+nav ul :hover {
+  background-color: white;
+  color: purple;
+  border-radius: 6px;
+}
+
+img{
+  position: relative;
+  height: 9rem;
+  font-size: 5rem;
+  bottom: 9rem;
+  background: none;
+  border-radius: 7rem;
+}
+
+.logo{
+  color: brown;
+  font-size: 3rem;
+  font-weight: bolder;
+  position: relative;
+  display: flex;
+  top: -5rem;
+  left: 2rem;
+}
+
+
+
+
