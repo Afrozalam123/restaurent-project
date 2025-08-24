@@ -1,20 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import  "../pages/Navbar.css";
 export default function Navbar() {
   return (
      <div>
- <nav className="sm:bg-amber-600   lg:bg-gray-400 ring-4">
-     <ul className=" sm:text-red-950  ml-4 text-xl  p-4 flex  w-20 md:text-blue-900  outline-slate-600 md:text-xl lg:text-2xl m-40  cursor-pointer">
-      <li> <NavLink to="/" end>Home</NavLink> </li>
-     <li> <NavLink to="/aboutus">Aboutus</NavLink> </li>
-      <li>  <NavLink to="/contact">Contact</NavLink> </li>
-       <li>   <NavLink to="/menu">Menu</NavLink> </li>
-        <li>    <NavLink to="/login">Login</NavLink>  </li>
+ <nav className="sm:h-7">
+     <ul className="" >
+      <li><Link to="/home" >Home</Link></li>
+     <li><Link to="/aboutus" >Aboutus</Link> </li>
+      <li><Link to="/contact" >Contact</Link> </li>
+       <li><Link to="/menu" >Menu</Link> </li>
+        <li><Link to="/login" >Login</Link>  </li>
      </ul>
-      
     </nav>
-   <section className="logo">
-     <h1>Foodie</h1>
+   <section> 
+   <h1 className="logo">Foodie</h1>
    </section>
 
     <section className="icon">
@@ -32,10 +31,7 @@ export default function Navbar() {
 
     
 </div>
-    
-     
-     
-
+  
      
   );
 }
