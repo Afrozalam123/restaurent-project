@@ -1,49 +1,49 @@
 * {
   margin: 0;
+  padding: 0;
 
 }
 
-nav ul {
+  @media (max-width:600px) {
+   body{
+    background: #0f172a;
+    color: #ffffff;      
+  }
+}
+
+nav ul{
+   width: 105vw;   /* poore screen ka width */
+  height: 5rem;   /* default height */
+  background: #666;
+  margin: 0px;
+  padding: 1rem 3rem;
   display: flex;
-  align-items: center;
-  flex-direction: row;
-   width: 100%;
-  height: 4rem;
   justify-content: space-evenly;
-  background-color: #666;
+  align-items: center;
+  
 }
- nav ul li{
-  color: white;
-  cursor: pointer;
-   width: 100%;
-  font-size: 1rem;
-  cursor: pointer;
- }
-
-
-/* Hover effect directly on li */
+/* Hover effect */
 nav ul li:hover {
   text-decoration: underline;
   color: purple;
   cursor: pointer;
 }
 
+ @media (max-width:600px) {
+  nav ul{
+    width: 500vw;
+    height: 5rem;
+    justify-content: space-around;
+    padding: 2rem;
+    color: white;
+    background-color: brown;
+    flex-direction: row;
+    font-size: 3rem;
+    padding-left: 29rem;
+    text-align: center;
 
-nav ul li::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0%;
-  height: 2px;
-  background: yellow;
-  transition: width 0.3s;
-}
-
-
-
-
-
+  }
+} 
 
 .logo{
   color: brown;
@@ -51,70 +51,36 @@ nav ul li::after {
   font-weight: bolder;
   position: relative;
   text-align: center;
-  display: none;
-
-  
-
-}
-
-
-
-
-.icon{
-  position: relative;
   display: flex;
-  font-size: 1rem;
+  top: -2rem;
+  left: 12px; 
+
 }
 
-.cart-container {
+@media (max-width:600px){
+ .logo {
   position: relative;
-  display: inline-block;
-  left: 75rem;
-  top: -8.3rem;
-  cursor: pointer;
+  color:pink;
+  letter-spacing:5px;
+  text-align: center;
+  padding: 0px 3rem;
+  margin: 0px 2rem;
+ }
 }
 
-.cart-container i {
-  position: relative;
-  font-size: 20px;
-  color:red;
-  bottom: -5rem;
-  
+
+
+
+
+.box1{
+width: 80%;
+  margin: 0 auto;
+  height: 55vh;
+}
+.myswiper{
+  height: 100 !important;
+  width: 100 !important;
 }
 
-.cart-dropdown {
-  display: none; /* by default hidden */
-  position: absolute;
-  top: 450%; /* icon ke thoda niche */
-  right: 0;
-  background-color: #fff;
-  padding: 25px;
-  min-width: 250px;
-  border-top:2px solid red;
-  
-  border-radius: 8px;
-  box-shadow: 0px 6px 22px rgba(0,0,0,0.15);
-  z-index: 1000;
-}
 
-.cart-dropdown h1 {
-  font-size: 2rem;
-  margin: 0 0 8px 0;
-  color: #444;
-}
 
-.cart-dropdown p {
-  font-size: 14px;
-  color: #666;
-  margin: 0;
-  line-height: 1.4;
-}
-
-/* Hover effect */
-.cart-container:hover .cart-dropdown {
-  display: block;
-  box-shadow: 0px 0px 12px darkgray,
-              0px 0px 14px red,   
-              2px 2px 15px green
-} 
- 

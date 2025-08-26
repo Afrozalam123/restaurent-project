@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./Component/Home";
+
 import Aboutus from "./Component/Aboutus";
 import Contact from "./Component/Contact"
 import Menu from "./Component/Menu";
@@ -11,9 +11,9 @@ import Navbar from "./Component/Navbar"
 const App = () => {
   return (
    <BrowserRouter>
-   <Navbar/>
+     <Navbar/>
       <Routes>
-        <Route path="/home" element={<Home/>}/>
+        
         <Route path ="/aboutus" element={<Aboutus/>}/>
         <Route path ="/contact" element={<Contact/>}/>
         <Route path ="/login" element={<Login/>}/>
@@ -26,3 +26,5 @@ const App = () => {
 };
 
 export default App;
+
+
