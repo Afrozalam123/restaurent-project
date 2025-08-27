@@ -41,6 +41,7 @@ export default function Home() {
          <SwiperSlide><div className='slide   slide2'></div></SwiperSlide>
          <SwiperSlide><div className='slide   slide3'></div></SwiperSlide>
          <SwiperSlide><div className='slide   slide4'></div></SwiperSlide>
+          <SwiperSlide><div className='slide   slide4'></div></SwiperSlide>
          </Swiper>
        </div>
     </section>
