@@ -68,19 +68,49 @@ nav ul li:hover {
  }
 }
 
-
-
-
-
-.box1{
-width: 80%;
+.container{
+width: 90%;
   margin: 0 auto;
-  height: 55vh;
+  height: 65vh;
+  border-radius: 50%;
+
 }
-.myswiper{
-  height: 100 !important;
-  width: 100 !important;
+.mySwiper{
+  height: 100% !important;
+  width: 100% !important;
 }
 
+.slide1{
+  background-image: url("../Afroz/Image11.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  height: 100%;
+}
 
-
+.slide2{
+  background-image: url("../Afroz/Image12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-size: contain;
+    background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.slide3{
+  background-image: url("../Afroz/image13.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+    background-size: contain;
+  background-position: center;
+}
+.slide4{
+  background-image: url("../Afroz/Image14.jpg");
+   width: 100%;
+   object-fit: cover;
+   max-width: auto;
+   background-size:cover;
+   height: 100%;
+}
