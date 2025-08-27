@@ -107,10 +107,30 @@ width: 90%;
   background-position: center;
 }
 .slide4{
-  background-image: url("../Afroz/Image14.jpg");
-   width: 100%;
+  background-image: url("../Afroz/Image16.jpg");
+   width: 80%;
+   margin: 1rem 6rem;
    object-fit: cover;
    max-width: auto;
    background-size:cover;
    height: 100%;
+}
+
+.Swiper-slide img{
+   width: 100%;
+  position: relative;
+  margin-bottom: -5rem;
+ }
+.swiper-pagination-bullets{
+  margin: 0rem 2rem;
+  padding: 1rem 2rem;
+}
+
+/* now responsive for container */
+@media(max-width:600px){
+  .container{
+    width: 250%;
+    margin-left: 260%;
+    padding: 3rem 11rem;
+  }
 }

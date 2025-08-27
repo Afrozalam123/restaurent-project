@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import "../pages/Navbar.css"
 
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+import { Navigation,Pagination } from 'swiper/modules';
 
 
 // Import Swiper React components
@@ -30,7 +31,12 @@ export default function Home() {
 
     <section>
        <div className='container'>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={true} modules={[Navigation,Pagination]} className="mySwiper" slidesperview={2} spacebetween={20} style={{
+        "--swiper-navigation-color":"green",
+        "--swiper-navigation-size":"3rem",
+          "--swiper-pagination-bullet-size":"1rem",
+          
+      }} pagination={true}>
         <SwiperSlide><div className='slide   slide1'></div></SwiperSlide>
          <SwiperSlide><div className='slide   slide2'></div></SwiperSlide>
          <SwiperSlide><div className='slide   slide3'></div></SwiperSlide>
