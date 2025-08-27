@@ -31,7 +31,7 @@ export default function Home() {
 
     <section>
        <div className='container'>
-      <Swiper navigation={true} modules={[Navigation,Pagination]} className="mySwiper" slidesperview={2} spacebetween={20} style={{
+      <Swiper navigation={true} modules={[Navigation,Pagination]} className="mySwiper" style={{
         "--swiper-navigation-color":"green",
         "--swiper-navigation-size":"3rem",
           "--swiper-pagination-bullet-size":"1rem",
