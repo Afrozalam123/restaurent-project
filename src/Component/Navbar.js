@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
 import "../pages/Navbar.css"
 
 
 // import required modules
-import { Navigation,Pagination } from 'swiper/modules';
+// import { Navigation,Pagination } from 'swiper/modules';
 
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import "../pages/Navbar.css"
+// import { Swiper, SwiperSlide } from 'swiper/react';
+import "../pages/Navbar.css"
+import Logo from "../Afroz/Logo.jpg"
 export default function Home() {
   return (
      <div>
@@ -25,32 +26,22 @@ export default function Home() {
      </ul>
     </nav>
    <section> 
-   <h1 className="logo sm:text-yellow-300 text-2xl md:text-white ">Foodie</h1>
+    <img src={Logo} alt="logo" className="logo"/>
    </section>
 
+  
 
-    <section>
-       <div className='container'>
-      <Swiper navigation={true} modules={[Navigation,Pagination]} className="mySwiper" style={{
-        "--swiper-navigation-color":"green",
-        "--swiper-navigation-size":"3rem",
-          "--swiper-pagination-bullet-size":"1rem",
-          
-      }} pagination={true}>
-        <SwiperSlide><div className='slide   slide1'></div></SwiperSlide>
-         <SwiperSlide><div className='slide   slide2'></div></SwiperSlide>
-         <SwiperSlide><div className='slide   slide3'></div></SwiperSlide>
-         <SwiperSlide><div className='slide   slide4'></div></SwiperSlide>
-          <SwiperSlide><div className='slide   slide4'></div></SwiperSlide>
-         </Swiper>
-       </div>
-    </section>
-      
-    
+
+
+
+
+  </div>
+  )
+}
  
 
 
-   </div>
+ 
     
 
 
@@ -58,5 +49,3 @@ export default function Home() {
   
  
 
-  )
-  }
