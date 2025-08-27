@@ -134,3 +134,10 @@ width: 90%;
     padding: 3rem 11rem;
   }
 }
+
+@media(max-width:600px){
+  .slide1.slide2.slide3.slide4{
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+}
