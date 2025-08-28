@@ -72,16 +72,18 @@ nav ul li:hover {
 
 @media (max-width:600px){
  .logo {
-  width: 7%;
+  width: 2.4rem;
   left: 2rem;
-  margin-top: 25px;
+  margin-top: 30px;
  }
 }
 
-.banner img{
-  height:300px;
+.img-banner{
+  height:600px;
   width: 100%;
   object-fit: cover;
+  padding: 1rem 2rem;
+  margin-top: 2;
 }
 
 @media(max-width:600px){
