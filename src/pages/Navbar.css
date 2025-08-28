@@ -34,18 +34,17 @@ nav ul li:hover {
 
   @media (max-width: 600px) {
   nav ul {
-
-    width: 500vw;
-    height: 5rem;
+     width: 111%;             /* Full width of screen */
+    height: auto;            /* Adjust height automatically */
     justify-content: space-around;
-    padding: 2rem;
-    color: white;
+    padding: 1rem 5rem;    
+    
     background-color: brown;
-    flex-direction: row-reverse;
-    font-size: 3rem;
-    padding-left: 29rem;
+    flex-direction: row;     /* Row me items */
+    font-size: 0.8rem;       /* Mobile ke liye chhota font */
     text-align: center;
-    overflow-x: hidden;
+    overflow-x: hidden;  
+
   }
 
   nav ul li:hover {
@@ -73,81 +72,25 @@ nav ul li:hover {
 
 @media (max-width:600px){
  .logo {
-  width: 12%;
+  width: 7%;
   left: 2rem;
+  margin-top: 25px;
  }
 }
 
-.container{
-width: 90%;
-  margin: 0 auto;
-  height: 65vh;
-  border-radius: 50%;
-
-}
-.mySwiper{
-  height: 100% !important;
-  width: 100% !important;
-}
-
-.slide1{
-  background-image: url("../Afroz/Image11.jpg");
-  background-repeat: no-repeat;
+.banner img{
+  height:300px;
   width: 100%;
-  background-position: center;
-  height: 100%;
-}
-
-.slide2{
-  background-image: url("../Afroz/Image12.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-    background-size: contain;
-    background-position: center;
-  height: 100%;
-  width: 100%;
-}
-.slide3{
-  background-image: url("../Afroz/image13.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-    background-size: contain;
-  background-position: center;
-}
-.slide4{
-  background-image: url("../Afroz/Image16.jpg");
-   width: 80%;
-   margin: 1rem 6rem;
-   object-fit: cover;
-   max-width: auto;
-   background-size:cover;
-   height: 100%;
-}
-
-.Swiper-slide img{
-   width: 100%;
-  position: relative;
-  margin-bottom: -5rem;
- }
-.swiper-pagination-bullets{
-  margin: 0rem 2rem;
-  padding: 1rem 2rem;
-}
-
-/* now responsive for container */
-@media(max-width:600px){
-  .container{
-    width: 250%;
-    margin-left: 260%;
-    padding: 3rem 11rem;
-  }
+  object-fit: cover;
 }
 
 @media(max-width:600px){
-  .slide1.slide2.slide3.slide4{
-    width: 100%;
-    padding: 1rem 2rem;
+  .img-banner{
+    position: relative;
+    width:100%;
+    margin: -5rem 1rem;
+    padding: 1rem 1rem;
+    
+
   }
 }

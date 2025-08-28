@@ -13,6 +13,7 @@ import "../pages/Navbar.css"
 // import { Swiper, SwiperSlide } from 'swiper/react';
 import "../pages/Navbar.css"
 import Logo from "../Afroz/Logo.jpg"
+import banner from "../Afroz/banner.jpg"
 export default function Home() {
   return (
      <div>
@@ -27,6 +28,13 @@ export default function Home() {
     </nav>
    <section> 
     <img src={Logo} alt="logo" className="logo"/>
+   </section>
+
+   <section>
+    <img src={banner} alt="banner-image" className="img-banner"/>
+     <div>
+      <h1>foodie</h1>
+     </div>
    </section>
 
   
