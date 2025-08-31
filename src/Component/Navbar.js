@@ -31,9 +31,16 @@ export default function Home() {
    </section>
 
    <section>
+   
     <img src={banner} alt="banner-image" className="img-banner"/>
+      <div className="banner-content">
+         <h1 className="heading">foodie</h1>
+     <p className="pragraph">Freshly cooked meals, delivered hot and fast.<br/>
+Taste happiness in every bite with Foodie.</p>
+  <button id="btn">order now</button>
+      </div>
      <div>
-      <h1>foodie</h1>
+      
      </div>
    </section>
 
