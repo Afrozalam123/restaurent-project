@@ -186,3 +186,68 @@ nav ul li:hover {
     font-family: cursive;
   }
 }
+.container {
+  position: relative;
+  display: inline-block;
+  top: -18rem;
+ align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 55vh;
+}
+.mySwiper {
+  width: 100% !important;
+  height: 500px !important;
+  display: flex;
+}
+.Slide1{
+  background-image: url("../Afroz/Image11.jpg");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.Slide2{
+  background-image: url("../Afroz/Image12.jpg");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.Slide3{
+  background-image: url("../Afroz/Image14.jpg");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.Slide4{
+  background-image: url("../Afroz/Image16.jpg");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.Slide5{
+  background-image: url("../Afroz/Image15.jpg");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.Slide6{
+  background-image: url("../Afroz/Image18.jpg.png");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.swiper{
+  padding-bottom: 2rem;
+}
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
+  margin-bottom: -0.5rem;
+} 
+
+@media(min-width:300px) and (max-width:600px) {
+  .container{
+    margin: 1rem 2rem;
+    padding: 1rem 2px;
+    height: 100vh;
+  }
+}

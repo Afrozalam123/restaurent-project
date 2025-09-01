@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import "../pages/Navbar.css"
 
 
 // import required modules
-// import { Navigation,Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 
 // Import Swiper React components
-// import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import "../pages/Navbar.css"
 import Logo from "../Afroz/Logo.jpg"
 import banner from "../Afroz/banner.jpg"
@@ -42,6 +42,60 @@ Taste happiness in every bite with Foodie.</p>
      <div>
       
      </div>
+     
+
+     <section  className="slider-section">
+      <div className="container">
+        <Swiper 
+        navigation={true} 
+        modules={[Navigation,Pagination]} 
+        className="mySwiper"
+        style={{
+          "--swiper-navigation-color":"red",
+          "--swiper-navigation-size":"1rem",
+          "--swiper-pagination-bullet-size":"1rem",
+           
+
+        }}pagination={{clickable:true}}
+         
+         breakpoints={{
+        // Mobile (sm)
+        0: {
+          direction: "vertical",
+          slidesPerView: 1,
+          navigation: false,
+          mousewheel: true,
+          pagination: { clickable: true },
+        },
+        // Tablet (md)
+        768: {
+          direction: "horizontal",
+          // slidesPerView: 2,
+          navigation: true,
+        },
+        // / Desktop (lg)
+        1024: {
+          direction: "horizontal",
+          slidesPerView: 1,
+          navigation: true,
+        },
+      }}
+    >
+         
+        <SwiperSlide><div className="slide  Slide1"></div></SwiperSlide>
+        <SwiperSlide><div className="slide  Slide2"></div></SwiperSlide>
+        <SwiperSlide><div className="slide  Slide3"></div></SwiperSlide>
+        <SwiperSlide><div className="slide  Slide4"></div></SwiperSlide>
+         <SwiperSlide><div className="slide  Slide5"></div></SwiperSlide>
+        <SwiperSlide><div className="slide  Slide6"></div></SwiperSlide>
+      
+      </Swiper>
+    
+      </div>
+  
+
+
+     </section>
    </section>
 
   
