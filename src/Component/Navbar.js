@@ -1,19 +1,29 @@
 import { Link } from "react-router-dom";
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
 import "../pages/Navbar.css"
 
 
 // import required modules
-import { Navigation, Pagination } from 'swiper/modules';
+// import { Navigation, Pagination } from 'swiper/modules';
 
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 import "../pages/Navbar.css"
 import Logo from "../Afroz/Logo.jpg"
 import banner from "../Afroz/banner.jpg"
+import Image21 from "../Afroz/Image21.jpg"
+import Image15 from "../Afroz/Image15.jpg"
+import Image20 from "../Afroz/Image20.jpg"
+import Image22 from "../Afroz/Image22.jpg"
+import Image24 from "../Afroz/Image24.jpg"
+import Image25 from "../Afroz/Image25.jpg"
+import Image26 from  "../Afroz/Imgae26.jpg"
+import Image27 from "../Afroz/Image27.jpg"
+// import Image19 from "../Afroz/Image19.jpg.png"
+
 export default function Home() {
   return (
      <div>
@@ -30,7 +40,7 @@ export default function Home() {
     <img src={Logo} alt="logo" className="logo"/>
    </section>
 
-   <section>
+   
    
     <img src={banner} alt="banner-image" className="img-banner"/>
       <div className="banner-content">
@@ -38,83 +48,77 @@ export default function Home() {
      <p className="pragraph">Freshly cooked meals, delivered hot and fast.<br/>
 Taste happiness in every bite with Foodie.</p>
   <button id="btn">order now</button>
-      </div>
-     <div>
-      
      </div>
-     
-
-     <section  className="slider-section">
-      <div className="container">
-        <Swiper 
-        navigation={true} 
-        modules={[Navigation,Pagination]} 
-        className="mySwiper"
-        style={{
-          "--swiper-navigation-color":"red",
-          "--swiper-navigation-size":"1rem",
-          "--swiper-pagination-bullet-size":"1rem",
-           
-
-        }}pagination={{clickable:true}}
-         
-         breakpoints={{
-        // Mobile (sm)
-        0: {
-          direction: "vertical",
-          slidesPerView: 1,
-          navigation: false,
-          mousewheel: true,
-          pagination: { clickable: true },
-        },
-        // Tablet (md)
-        768: {
-          direction: "horizontal",
-          // slidesPerView: 2,
-          navigation: true,
-        },
-        // / Desktop (lg)
-        1024: {
-          direction: "horizontal",
-          slidesPerView: 1,
-          navigation: true,
-        },
-      }}
-    >
-         
-        <SwiperSlide><div className="slide  Slide1"></div></SwiperSlide>
-        <SwiperSlide><div className="slide  Slide2"></div></SwiperSlide>
-        <SwiperSlide><div className="slide  Slide3"></div></SwiperSlide>
-        <SwiperSlide><div className="slide  Slide4"></div></SwiperSlide>
-         <SwiperSlide><div className="slide  Slide5"></div></SwiperSlide>
-        <SwiperSlide><div className="slide  Slide6"></div></SwiperSlide>
+      <section>
+        <div className="healthy">
+          <h2 className="health">Our special dishes</h2>
+        </div>
+        <section className="card-container">
+         <div className="card">
+         <img src={Image15} alt="image15" className="paner-img"/>
+         <h1>Shahipanner</h1>
+         <p>"Rich & creamy tomato gravy with fresh paneer</p>
+          <p className="price">price:₹180</p>
+          <button>Add to Cart</button>
+         </div>
+         <div className="card">
+          <img src={Image20} alt="image20"/>
+          <h1>Chicken Roll</h1>
+          <p>Juicy chicken wrapped in soft paratha with spicy chutney</p>
+          <p className="price">price:₹120</p>
+          <button>Add to cart</button>
+         </div>
       
-      </Swiper>
-    
-      </div>
-  
+        <div className="card">
+         <img src={Image21} alt="image21" className="rezala-img"/>
+         <h1>Shahi Chicken Rezala</h1>
+         <p>Soft chicken cooked in creamy dahi and kaju gravy with mild Mughlai spices.</p>
+         <p className="price">price:₹220-250</p>
+         <button>Add to cart</button>
+        </div>
 
+        <div className="card">
+          <img src={Image22} alt="Image22"/>
+          <h1>Shahi chicken Biryani</h1>
+          <p>Fragrant basmati rice layered with tender chicken, slow-cooked with saffron, aromatic spices</p>
+          <p className="price">price:₹220</p>
+          <button>Add to cart</button>
+          </div>
+        
+          <div className="card">
+          <img src={Image24} alt="Image24" className="roti"/>
+           <h1>Special Butter Naan</h1>
+           <p>Soft and fluffy Indian flatbread baked in a tandoor, brushed with fresh butter for a rich taste. Perfect to pair with any curry.</p>
+           <p className="price">price:₹50 per piece</p>
+           <button>Add to cart</button>
+          </div>
+           <div className="card">
+           <img src={Image25} alt="Image25" className="taste"/>
+            <h1>Sweet Firni</h1>
+            <p>Special Firni is a rich and creamy Indian dessert made with ground rice, milk, and sugar, slow-cooked to perfection. Flavored with saffron and cardamom, and garnished with</p>
+            <p className="price">price:₹50</p>
+            <button>Add to cart</button>
+           </div>
 
-     </section>
-   </section>
+           <div className="card">
+           <img src={Image26} alt="image26" className="tadka-img"/>
+           <h1>Special Tadka Dal</h1>
+           <p>Tadka Dal is a comforting Indian dish made with yellow lentils, tempered with ghee, garlic, cumin, and spices. Its smoky aroma and rich flavor make it a perfect pair with rice or roti.</p>
+           <p className="price">price:₹120 per bowl</p>
+           <button>Add to cart</button>
+           </div>
 
-  
+           <div className="card">
+            <img src={Image27} alt="Image27" className="curry-img"/>
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Chicken Curry</h1>
+            <p>A rich and flavorful curry slow-cooked with aromatic spices, creamy gravy, and tender pieces for a royal taste. Best enjoyed with naan or rice.</p>
+            <p className="price">price:₹130 per bowl</p>
+            <button>Add to cart</button>
+           </div>
+         </section>
+      </section>
+     
+     </div>
 
-
-
-
-
-  </div>
   )
 }
- 
-
-
- 
-    
-
-
-    
-  
- 
-
