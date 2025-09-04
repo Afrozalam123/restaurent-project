@@ -96,7 +96,7 @@ Taste happiness in every bite with Foodie.</p>
            <img src={Image25} alt="Image25" className="taste"/>
             <h1>Sweet Firni</h1>
             <p>Special Firni is a rich and creamy Indian dessert made with ground rice, milk, and sugar, slow-cooked to perfection. Flavored with saffron and cardamom, and garnished with</p>
-            <p className="price">price:₹50</p>
+            <p className="price">price:₹50 per bowl</p>
             <button>Add to cart</button>
            </div>
 
@@ -110,7 +110,7 @@ Taste happiness in every bite with Foodie.</p>
 
            <div className="card">
             <img src={Image27} alt="Image27" className="curry-img"/>
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Chicken Curry</h1>
+            <h1>Chicken Curry</h1>
             <p>A rich and flavorful curry slow-cooked with aromatic spices, creamy gravy, and tender pieces for a royal taste. Best enjoyed with naan or rice.</p>
             <p className="price">price:₹130 per bowl</p>
             <button>Add to cart</button>
