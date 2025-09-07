@@ -7,14 +7,20 @@
   @media (max-width:600px) {
    body{
     background: #0f172a;
-    color: #ffffff;      
+    /* color: #ffffff;     */
+    box-shadow: 2px 2px 22px white,
+                3px 3px 25px white,
+                3px 3px 30px white;  
   }
 }
+/* body{
+  background-color: brown;
+} */
 
 nav ul{
-   width: 105vw;   /* poore screen ka width */
-  height: 5rem;   /* default height */
-  background-color: #1a1a1a; /* dark gray */
+   width: 105vw;   
+  height: 5rem;   
+  background-color: #1a1a1a; 
   color: white;
   margin: 0px;
   padding: 1rem 3rem;
@@ -231,6 +237,7 @@ nav ul li:hover {
 @media (min-width: 641px) and (max-width: 1024px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+     margin-bottom: 1rem;
   }
 }
 @media (min-width: 1025px) {
@@ -246,11 +253,10 @@ nav ul li:hover {
    position:relative;
   display: flex;             
   flex-direction:column;
-  gap: 0.1px;
-  bottom: 40rem;   
-       
+  gap: 0.10px;
+ 
   width: 100%;       
-  max-width: 18rem;  
+  max-width: 17rem;  
   height: auto;      
   margin: 0 auto;
   justify-content: space-between;
@@ -321,6 +327,7 @@ button:active {
     align-items: center;
     width: 90%;
     margin: 1rem auto;
+    left: 3rem;
     /* position: static; */
     font-size: 0.9rem;
   
@@ -331,8 +338,8 @@ button:active {
     text-align: center;
   }
   .card p {
-    font-size: 0.9rem;
-    color: red;
+    font-size: 0.8rem;
+    color:black;
     text-align: center;
   }
   .card button {
@@ -394,4 +401,25 @@ button:hover {
   text-transform: capitalize;
   font-weight: bolder;
 
+}
+.icons{
+  color:white;
+  position: relative;
+ display: flex;
+  top: -60.4rem;
+  justify-content: flex-end;
+  left: -2.2rem;
+
+}
+.price{
+  color:red;
+  background-color: green;
+}
+@media (max-width:600px){
+  .icons{
+    font-size: 1.3rem;
+    color:white;
+    /* left: -1rem; */
+    top: -50rem;
+  }
 }

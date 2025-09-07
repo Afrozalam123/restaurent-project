@@ -1,16 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Aboutus from "./Component/Aboutus";
-import Contact from "./Component/Contact"
-import Menu from "./Component/Menu";
-import Login from "./Component/Login";
-import Navbar from "./Component/Navbar"  
+import Navbar from  './Component/Navbar';
+import Aboutus from "./pages/Aboutus";
+import Contact from "./pages/Contact"
+import Menu from "./pages/Menu";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
    <BrowserRouter>
      <Navbar/>
       <Routes>
+       <Route path="/" element={<Home/>}/>
         <Route path ="/aboutus" element={<Aboutus/>} />
         <Route path ="/contact" element={<Contact/>} />
         <Route path ="/login" element={<Login/>}  />
