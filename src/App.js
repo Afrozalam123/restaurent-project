@@ -1,27 +1,26 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from  './Component/Navbar';
+import Navbar from "./Component/Navbar";
+import Home from "./pages/Home";
 import Aboutus from "./pages/Aboutus";
-import Contact from "./pages/Contact"
+import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Login from "./pages/Login";
-import Home from "./pages/Home";
 
-const App = () => {
+function App() {
   return (
-   <BrowserRouter>
-     <Navbar/>
+    <BrowserRouter>
+      <Navbar />
+
       <Routes>
-       <Route path="/" element={<Home/>}/>
-        <Route path ="/aboutus" element={<Aboutus/>} />
-        <Route path ="/contact" element={<Contact/>} />
-        <Route path ="/login" element={<Login/>}  />
-        <Route path ="/menu" element={<Menu/>} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-   </BrowserRouter>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
-
-

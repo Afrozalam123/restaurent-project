@@ -1,5 +1,5 @@
 import React from 'react'
-import  "../Global.css/Home.css";
+import "../Global.css/Home.css"
 import banner from "../Afroz/banner.jpg"
 import Image21 from "../Afroz/Image21.jpg"
 import Image15 from "../Afroz/Image15.jpg"
@@ -10,10 +10,11 @@ import Image25 from "../Afroz/Image25.jpg"
 import Image26 from  "../Afroz/Imgae26.jpg"
 import Image27 from "../Afroz/Image27.jpg"
 
+
 const Home = () => {
   return (
     <div>
-      <img src={banner} alt="banner-image" className="img-banner"/>
+       <img src={banner} alt="banner-image" className="img-banner"/>
       <div className="banner-content">
          <h1 className="heading">foodie</h1>
      <p className="pragraph">Freshly cooked meals, delivered hot and fast.<br/>
@@ -93,5 +94,4 @@ Taste happiness in every bite with Foodie.</p>
     </div>
   )
 }
-
 export default Home
