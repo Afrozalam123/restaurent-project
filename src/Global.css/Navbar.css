@@ -4,18 +4,13 @@
 
 }
 
-  @media (max-width:600px) {
-   body{
-    background: #0f172a;
-    /* color: #ffffff;     */
-    box-shadow: 2px 2px 22px white,
-                3px 3px 25px white,
-                3px 3px 30px white;  
-  }
+  
+body{
+  background-color:darkblue;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-/* body{
-  background-color: brown;
-} */
 
 nav ul{
    width: 105vw;   
