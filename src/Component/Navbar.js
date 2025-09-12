@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "../Global.css/Navbar.css"
-// import Logo from "../Afroz/Logo.jpg"
+import Logo from "../Afroz/Logo.jpg"
 export default function Navbar() {
   return (
      <div>
@@ -14,7 +14,7 @@ export default function Navbar() {
      </ul>
     </nav>
    <section> 
-    {/* <img src={Logo} alt="logo" className="logo"/> */}
+    <img src={Logo} alt="logo" className="logo"/>
    </section>
    </div>
   )

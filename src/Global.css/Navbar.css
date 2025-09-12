@@ -30,31 +30,31 @@ nav ul{
   
 }
 /* Hover effect */
-nav ul li:hover {
-  text-decoration: underline;
-  color: purple;
-  cursor: pointer;
-}
 
+ 
  
 
   @media (max-width: 600px) {
   nav ul {
-     width: 111%;             /* Full width of screen */
-    height: auto;            /* Adjust height automatically */
-    justify-content: space-around;
+     width: 111%;             
+    height: auto;            
+    justify-content: space-between;
+    flex-direction: column;
     padding: 1rem 5rem;    
-    
-    background-color: brown;
-    flex-direction: row;     /* Row me items */
-    font-size: 0.8rem;       /* Mobile ke liye chhota font */
+    gap: 20px;
+    color: black;
+    transition: 0.3s ease;
+    background-color:pink;
+    /* flex-direction: row;      */
+    font-size: 0.7rem;       
     text-align: center;
     overflow-x: hidden;  
 
   }
 
   nav ul li:hover {
-    background: #a0522d;      /* hover effect */
+       color: #007bff;
+   border-bottom: 2px solid #007bff;
     cursor: pointer;
   }
 }
@@ -62,7 +62,7 @@ nav ul li:hover {
 
  
 
-/* .logo{
+.logo{
   background-color: black;
   font-size: 1rem;
   width: 5%;
@@ -74,13 +74,13 @@ nav ul li:hover {
   border-radius: 1rem;
   left: 12px; 
 
-} */
+} 
 
-/* @media (max-width:600px){
+@media (max-width:600px){
  .logo {
   width: 2.4rem;
   left: 3rem;
   margin-top: 30px;
  
 }
-} */
+}
