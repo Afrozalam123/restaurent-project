@@ -14,7 +14,7 @@ export default function Navbar() {
      </ul>
     </nav>
    <section> 
-    <img src={Logo} alt="logo" className="logo"/>
+    <img src={Logo} alt="logo" className="logo" loading="lazy"/>
    </section>
    </div>
   )
