@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import "../Global.css/Home.css"
 import banner from "../Afroz/banner.jpg"
 import Image21 from "../Afroz/Image21.jpg"
@@ -9,12 +10,14 @@ import Image24 from "../Afroz/Image24.jpg"
 import Image25 from "../Afroz/Image25.jpg"
 import Image26 from  "../Afroz/Imgae26.jpg"
 import Image27 from "../Afroz/Image27.jpg"
+// import Image28 from "../Afroz/Image28.jpg"
 
 
 const Home = () => {
   return (
     <div>
-       <img src={banner} alt="banner-image" className="img-banner"/>
+       <img src={banner} alt="banner-image" className="img-banner" loading='lazy '/>
+   
       <div className="banner-content">
          <h1 className="heading">foodie</h1>
      <p className="pragraph">Freshly cooked meals, delivered hot and fast.<br/>
@@ -87,6 +90,17 @@ Taste happiness in every bite with Foodie.</p>
             <p className="price">price:₹130 per bowl</p>
             <button>Add to cart</button>
            </div>
+          <section>
+            <div>
+            <h1 className="about-heading">About foodie</h1>
+            <Link to="/aboutus">
+             <button className='about-btn'>About us</button>
+            </Link>
+            </div>
+         
+          </section>
+           
+           
          </section>
       </section> 
      

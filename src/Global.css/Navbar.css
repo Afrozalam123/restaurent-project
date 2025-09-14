@@ -1,10 +1,12 @@
-* {
+body{
   margin: 0;
   padding: 0;
-
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* horizontal scroll hata dega */
+  box-sizing: border-box;
 }
 
-  
+
 @media(max-width:600px){
  
     body{
@@ -18,46 +20,53 @@
 
 nav ul{
   position: relative;
-   width: 105vw;   
+   width: 111%;
+   max-width: 100vw;   
   height: 5rem;   
-  background-color: #1a1a1a; 
-  color: white;
+  background-color:black; 
+  color:white;
+  transition: 0.3s ease;
   margin: 0px;
   padding: 1rem 3rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   
 }
 /* Hover effect */
-
+ @media(min-width:600px)and(max-width:1200px){
+  nav ul li:hover{
+    color: purple;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+  }
+ }
  
- 
-
+   
   @media (max-width: 600px) {
   nav ul {
-     width: 111%;             
-    height: auto;            
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 1rem 5rem;    
-    gap: 20px;
-    color: black;
-    transition: 0.3s ease;
-    background-color:pink;
-    /* flex-direction: row;      */
-    font-size: 0.7rem;       
-    text-align: center;
-    overflow-x: hidden;  
-
+     width: 100%;
+     max-width: 100vw;
+     height: auto;
+     flex-direction: column;
+     padding: 1rem 1rem;
+     gap: 10px;
+     justify-content: flex-start;
+     align-items: center;
+     box-sizing: border-box;
   }
+}
+
+
+
 
   nav ul li:hover {
-       color: #007bff;
+       color:red;
    border-bottom: 2px solid #007bff;
     cursor: pointer;
   }
-}
+
 
 
  
@@ -78,9 +87,9 @@ nav ul{
 
 @media (max-width:600px){
  .logo {
-  width: 1.4rem;
+  width: 2.4rem;
   left: 3rem;
-  margin-top: 30px;
+  margin-top: -1rem;
  
 }
 }

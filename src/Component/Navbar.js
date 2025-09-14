@@ -6,11 +6,11 @@ export default function Navbar() {
      <div>
  <nav>
      <ul>
-      <li><Link to="/home">Home</Link></li>
-     <li><Link to="/aboutus">Aboutus</Link></li>
-      <li><Link to="/contact" >Contact</Link></li>
-       <li><Link to="/menu" >Menu</Link></li>
-        <li><Link to="/login" >Login</Link></li>
+      <li><Link to="/home" className="nav-list">Home</Link></li>
+     <li><Link to="/aboutus" className="nav-list">Aboutus</Link></li>
+      <li><Link to="/contact"  className="nav-list">Contact</Link></li>
+       <li><Link to="/menu"  className="nav-list">Menu</Link></li>
+        <li><Link to="/login" className="nav-list" >Login</Link></li>
      </ul>
     </nav>
    <section> 
