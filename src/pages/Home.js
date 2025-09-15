@@ -10,8 +10,6 @@ import Image24 from "../Afroz/Image24.jpg"
 import Image25 from "../Afroz/Image25.jpg"
 import Image26 from  "../Afroz/Imgae26.jpg"
 import Image27 from "../Afroz/Image27.jpg"
-// import Image28 from "../Afroz/Image28.jpg"
-
 
 const Home = () => {
   return (
