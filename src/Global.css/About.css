@@ -60,3 +60,34 @@
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
   transform: scale(1.05);
 }
+.container1{
+  height: 400px;
+  width: 90%;
+ background-color: #5B9279;
+  margin: 7rem 2rem;
+  padding: 1rem 2rem;
+  align-items: center;
+
+}
+.dish-img{
+  position: relative;
+  margin-left: 35rem;
+  background-size: cover;
+  overflow: hidden;
+  width: 50%;
+}
+.containr-content h1{
+  color: black;
+  font-weight: bolder;
+   font-size:3rem;
+ margin-top: -23rem;
+  
+}
+.containr-content p{
+white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+ 
+  
+
+}
