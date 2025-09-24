@@ -287,10 +287,12 @@
   flex-wrap:wrap; 
    flex-direction:row;
    cursor: pointer;           
-  width: 65%;                
+ 
   margin: 5rem auto;
   gap: 1rem;                  
 }
+
+
 
 .box1 {
   flex: 1 1 calc(33.33% - 1rem); 
@@ -305,6 +307,7 @@
   text-align: center;
   min-height: 300px;
 }
+
 
 .box1:hover {
   transform: scale(1.05);
@@ -368,14 +371,20 @@
   margin: 2.5rem 0 0; 
   opacity:0.7;
 }
+@media (max-width:600px){
+  .heath{
+    font-size: 0.5rem;
+  }
+}
+
   
 .healthing{
-  position:absolute;
+  position:relative;
   display: block;
   flex-direction: column;
   text-align: center;
   justify-content: flex-end;
-  margin: -10rem 3rem;
+  margin: 2rem 3rem;
 }
 .healthing h1{
   font-size: 2rem;
@@ -383,8 +392,99 @@
    
 }
 @media (max-width:600px){
-  .healthing{
-    color: white;
-    font-size: 0.11rem;
+  .healthing h1 {
+    font-size: 1.5rem;
+  }
+  .heath {
+    font-size: 0.8rem;
   }
 }
+
+/* ********  TEAM SECTION */
+/* ******** */
+
+
+
+
+
+.uper-head {
+  position: relative;       
+  display: flex;
+  flex-direction: column;
+  justify-content:center; 
+  align-items: center;
+  text-align: center;
+  min-height: 10vh;           
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+
+ @media (min-width: 300px) and (max-width:600px)   {
+  .uper-head {
+    min-height:8vh;      
+    /* padding:auto 1rem;      */
+  }
+}
+
+.uper-head h1{
+  font-size: 2rem;
+  font-weight: bolder;
+  font-style: italic;
+  background: linear-gradient(90deg, #917ea0, #310059); 
+  -webkit-background-clip: text;   
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  margin:2px
+}
+.uper-head p{
+  text-align: center;
+  line-height: 1rem;
+
+
+}
+
+.TEAM1 {
+  display: flex;       
+  justify-content: center; 
+  flex-wrap: wrap; 
+  flex-direction: row;   /* ✅ row rakho, column mat rakho */
+  cursor: pointer; 
+  margin: 5rem auto;
+  max-width: 1200px;
+  gap: 1rem;       
+}
+
+.team {
+  flex: 1 1 calc(25% - 1rem);  
+  background: linear-gradient(135deg, #380660, #feb47b);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  padding: 1.5rem;
+  border-radius: 10%;
+  text-align: center;
+  min-height: 400px;
+  color: white;
+}
+.team:hover{
+   transform: scale(1.07);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+
+}
+.ceo-img {
+  position: relative;      /* overlay ke liye parent relative hona chahiye */
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+.ceo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
