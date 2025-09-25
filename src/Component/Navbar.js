@@ -16,6 +16,11 @@ export default function Navbar() {
    <section> 
     <img src={Logo} alt="logo" className="logo" loading="lazy"/>
    </section>
+   <section>
+    <div className="icon">
+      
+    </div>
+   </section>
    </div>
   )
 }

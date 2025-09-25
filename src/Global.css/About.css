@@ -35,14 +35,15 @@
 }
 @media(max-width:600px){
   .banr-cont p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: cursive;
-    color:#F4442E;
+    color:white;
+    text-shadow: 2px 2px 12px white;
   }
 }
  .btn-explore {
   display: inline-block;
-  /* margin-top: 30px; */
+ 
   padding: 12px 32px;
   font-size: 18px;
   font-weight: 600;
@@ -421,9 +422,12 @@
 
 
  @media (min-width: 300px) and (max-width:600px)   {
-  .uper-head {
-    min-height:8vh;      
-    /* padding:auto 1rem;      */
+  .uper-head p {
+     
+   max-width:80%;
+   opacity: 1.2;
+   font-size: 0.6rem;
+   
   }
 }
 
@@ -439,18 +443,28 @@
   cursor: pointer;
   margin:2px
 }
+@media (max-width:600px){
+  .uper-head h1{
+     background: linear-gradient(90deg, #FE5D9F, #9A0945); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 2rem;
+  }
+}
 .uper-head p{
   text-align: center;
   line-height: 1rem;
-
-
+  color: white;
 }
+
+
 
 .TEAM1 {
   display: flex;       
   justify-content: center; 
   flex-wrap: wrap; 
-  flex-direction: row;   /* ✅ row rakho, column mat rakho */
+  flex-direction: row;   
   cursor: pointer; 
   margin: 5rem auto;
   max-width: 1200px;
@@ -488,3 +502,45 @@
   display: block;
 }
 
+@media(max-width:600px){
+  .ceo-img{
+    height:6rem;
+  }
+}
+.Menu{
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.btn-container {
+  display: flex;
+  justify-content: center; 
+   
+  align-items: center;   
+  
+        
+}
+.btn-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  background: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 30px;
+  text-decoration: none;
+  /* box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); */
+  transition: all 0.3s ease;
+  /* transform: scale(1.05); */
+}
+.btn-menu:hover{
+   background: #FFD700;
+  color: #000;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  transform: scale(1.05);
+
+}

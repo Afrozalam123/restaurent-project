@@ -62,7 +62,7 @@ const Aboutus = () => {
             <div className='mision-img'>
               <img src={mision} alt='mision' className='mision-img'/>
               <div className='mision-heading'>
-                <h1>Our Mission</h1>
+                <h1 className='bg-slate-600'>Our Mission</h1>
                 <p>
                   Our mission is to serve our customers with quality, <br/>
                   honesty, and passion, while creating memorable <br/>
@@ -124,7 +124,7 @@ const Aboutus = () => {
           {/* Heading part */}
           <div className="uper-head">
             <h1>Meet our Team</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsa? Voluptatibus modi voluptas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsa  Voluptatibus modi voluptas.</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo consequuntur aut eligendi nesciunt asperiores cum possimus minima.</p>
           </div>
 
@@ -165,10 +165,10 @@ const Aboutus = () => {
   </div>
 </div>
  </section>
-  <div>
-    <h1>our menu</h1>
+   <div className='btn-container'> 
+    {/* <h1 className='Menu'>our menu</h1>  */}
     <Link to="/menu">
-    <button>our menu</button>
+    <button className='btn-menu'>our menu</button>
     </Link>
   </div>
   </div>
