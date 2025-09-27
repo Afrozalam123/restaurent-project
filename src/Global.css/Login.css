@@ -1,0 +1,133 @@
+.Box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: -34px;
+ 
+  height: 100vh;
+  background: #f8f8f8;
+   background: linear-gradient(
+    to bottom,
+    #1E441E 0%,
+     #AA4465 50%,
+     #16697A 50%,
+     #000000 100%
+   )
+}
+
+/* white card box */
+.Box1 {
+  position: relative;
+  display: flex;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 400px;
+  height: 550px;
+  text-align: center;
+   background: linear-gradient(
+    to bottom,
+    #686ca1 0%,
+    hsl(311, 70%, 21%) 50%,
+       #686ca1 50%,
+    hsl(311, 70%, 21%) 100%
+  
+  )
+}
+.PHONE{
+  padding: 1rem;
+  margin: 1rem;
+  
+}
+  
+.PHONE input::placeholder {
+  color: gray;
+  /* font-size: 1rem; */
+  opacity: 1;
+}
+
+#otp-btn{
+  margin-left: 15px;
+  background-color: red;
+  width: 20vw;
+  align-items: center;
+}
+.divider{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: darkgray;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.divider::before,
+.divider::after{
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.divider:not(:empty)::before{
+  margin-right: .75em;
+}
+.divider:not(:empty)::after{
+  margin-left: .75em;
+}
+.auth-option {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Common button reset */
+ .btn-email,
+ .btn-gmail {
+  border: 1px solid black;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+ .btn-email:hover {
+  all: unset;       
+  display:block;    
+  width: 300px;      /* wapas set karo */
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: greenyellow;  /* new hover */
+  color: black;
+}
+.btn-gmail:hover{
+  all: unset;
+  background-color: aqua;
+  display: block;
+  width: 300px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+
+}
+.fa-google {
+  font-size: 20px; /* bada icon */
+  background: linear-gradient(90deg, #4285F4 0%, #DB4437 25%, #F4B400 50%, #0F9D58 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: -75px;
+  margin-right: 45%;
+}
+.fa-envelope{
+  font-size: 20px;
+  color: red;
+   margin-top: -75px;
+   margin-right: 70%;
+  
+}

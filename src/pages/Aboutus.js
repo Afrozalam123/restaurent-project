@@ -62,7 +62,7 @@ const Aboutus = () => {
             <div className='mision-img'>
               <img src={mision} alt='mision' className='mision-img'/>
               <div className='mision-heading'>
-                <h1 className='bg-slate-600'>Our Mission</h1>
+                <h1>Our Mission</h1>
                 <p>
                   Our mission is to serve our customers with quality, <br/>
                   honesty, and passion, while creating memorable <br/>

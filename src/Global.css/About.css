@@ -162,18 +162,15 @@
   }
 }
 /* ========== VISION SECTION ========== */
+/* ========== VISION SECTION ========== */
+/* ========== VISION SECTION ========== */
 .our-vision {
-  position: relative;
   display: flex;
-  top: -5rem;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  transition: 0.2s ease;
-  transform: translatex(-15px);
-  cursor: pointer;
   width: 70%;
-  margin: 6rem auto;
+  margin: 6rem auto 4rem auto; /* upar spacing */
   padding: 2rem;
   gap: 2rem;
   border-radius: 10px;
@@ -188,7 +185,7 @@
 
 .vsion-contents {
   flex: 1;
-  text-align: left;
+  text-align: left; /* text left */
 }
 
 .vsion-contents h1 {
@@ -206,11 +203,12 @@
 
 .vision-img {
   flex: 1;
-  text-align: right;
+  text-align: right; /* image right */
 }
 
 .vision-img img {
-  width: 60%;
+  width: 100%;
+  max-width: 400px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -222,25 +220,16 @@
   align-items: center;
   flex-wrap: wrap;
   width: 70%;
-  margin: 8rem auto;
-  padding: 1rem;
+  margin: 4rem auto 8rem auto; /* niche spacing */
+  padding: 2rem;
   gap: 2rem;
-}
-
-.mision-img {
-  flex: 1;
-  text-align: left;
-}
-
-.mision-img img {
-  width: 90%;
   border-radius: 10px;
-  object-fit: cover;
 }
 
 .mision-heading {
   flex: 1;
-  text-align: right;
+  text-align: right; /* text right */
+  order: 2; /* image left, text right */
 }
 
 .mision-heading h1 {
@@ -256,12 +245,30 @@
   line-height: 1.5;
 }
 
+.mision-img {
+  flex: 1;
+  text-align: left; /* image left */
+  order: 1;
+}
+
+.mision-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .our-vision,
   .our-mision {
     flex-direction: column;
     width: 90%;
+    text-align: center;
+  }
+
+  .vsion-contents,
+  .mision-heading {
     text-align: center;
   }
 
@@ -273,15 +280,12 @@
   .vision-img img,
   .mision-img img {
     width: 100%;
-  }
-
-  .vsion-contents,
-  .mision-heading {
-    text-align: center;
+    max-width: none;
   }
 }
 
 
+  
 .box {
   display:flex;       
   justify-content: space-between; 
@@ -423,7 +427,6 @@
 
  @media (min-width: 300px) and (max-width:600px)   {
   .uper-head p {
-     
    max-width:80%;
    opacity: 1.2;
    font-size: 0.6rem;
@@ -455,7 +458,7 @@
 .uper-head p{
   text-align: center;
   line-height: 1rem;
-  color: white;
+ 
 }
 
 
