@@ -131,3 +131,9 @@
    margin-right: 70%;
   
 }
+.foterh1{
+  align-items: center;
+  position: relative;
+  display: flex;
+  margin-top: 2rem;
+}

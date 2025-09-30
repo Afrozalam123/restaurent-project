@@ -1,4 +1,5 @@
 import React from 'react'
+// import { useUser } from "@clerk/clerk-react";
 import { Link } from "react-router-dom";
 import "../Global.css/Home.css"
 import banner from "../Afroz/banner.jpg"
@@ -12,7 +13,10 @@ import Image26 from  "../Afroz/Imgae26.jpg"
 import Image27 from "../Afroz/Image27.jpg"
 
 const Home = () => {
+  
+
   return (
+  
     <div>
        <img src={banner} alt="banner-image" className="img-banner" loading='lazy '/>
    
@@ -21,6 +25,8 @@ const Home = () => {
      <p className="pragraph">Freshly cooked meals, delivered hot and fast.<br/>
 Taste happiness in every bite with Foodie.</p>
   <button id="btn">order now</button>
+  
+  
      </div>
       <section>
         <div className="healthy">

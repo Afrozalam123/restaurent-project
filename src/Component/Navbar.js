@@ -9,9 +9,8 @@ export default function Navbar() {
       <li><Link to="/home" className="nav-list">Home</Link></li>
      <li><Link to="/aboutus" className="nav-list">Aboutus</Link></li>
        <li><Link to="/menu"  className="nav-list">Menu</Link></li>
-          {/* <li><Link to="/contact"  className="nav-list">Contact</Link></li> */}
         <li><Link to="/login" className="nav-list" >Login</Link></li>
-        <li><Link to="/signup" className="nav-list" >Signup</Link></li>
+        <li><Link to="/signin" className="nav-list" >Signin</Link></li>
      </ul>
     </nav>
    <section> 
