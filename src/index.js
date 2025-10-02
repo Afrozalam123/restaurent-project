@@ -1,13 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import { ClerkProvider } from "@clerk/clerk-react";
 import App from "./App";
-
-// const PUBLISHABLE_KEY = "pk_test_cmFyZS1tdWxsZXQtMjUuY2xlcmsuYWNjb3VudHMuZGV2JA"; 
+import "./index.css";   // ✅ agar tumhari global CSS file hai
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+  <React.StrictMode>   {/* ✅ recommended: debugging ke liye */}
     <App />
-  // </ClerkProvider>
+  </React.StrictMode>
 );
