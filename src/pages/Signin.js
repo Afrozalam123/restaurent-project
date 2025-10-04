@@ -8,27 +8,33 @@ const Signinpage = () => {
   <div className="signup-card">
     <h1 className="signup-title">Create Account ✨</h1>
     <p className="signup-subtitle">Sign up to explore more</p>
-     <form>
+     <form> 
+        <div className="form-group">
             <input 
               type="text" 
               placeholder="Enter your Name"
             />
-
+           </div>
+           <div className="form-group">
             <input 
               type="email" 
               placeholder="Enter your Email"
             />
-
+            </div>
+           
+           <div className="form-group">
             <input 
               type="password" 
               placeholder="Create Password"
             />
+           </div>
 
+           <div className="form-group">
             <input 
               type="password" 
               placeholder="Confirm Password"
             />
-
+            </div>
             <div className="terms-container">
               <label className="checkbox-label">
                 <input type="checkbox" />
