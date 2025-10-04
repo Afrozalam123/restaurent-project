@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import "../Global.css/Login.css";
@@ -48,7 +49,15 @@ const Login = () => {
           <button className="btn-gmail">
             <i className="fa-brands fa-google"></i> Continue with Google
           </button>
+          <div>
+             <Link to="/signin">
+             <article className="art-sign">Sign in</article>
+            </Link>
+          </div>
         </div>
+      </div>
+      <div>
+       
       </div>
     </div>
   );
